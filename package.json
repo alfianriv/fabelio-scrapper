@@ -1,0 +1,25 @@
+{
+  "name": "fabelio-scrapper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "jest --forceExit",
+    "format": "prettier --write \"src/**/*.js\" \"index.js\" \"test/**/*.js\"",
+    "start": "node index.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.10",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jest": "^27.1.0",
+    "supertest": "^6.1.6"
+  }
+}
