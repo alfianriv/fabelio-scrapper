@@ -18,7 +18,7 @@ const scrapeAPI = async (url) => {
     );
     const product_description = $(".s1").first().text();
     let product_images = [];
-    for (let index = 0; index < $("#product-image").length; index++) {
+    for (let index = 1; index < $("#product-image").length; index++) {
       product_images.push(
         $("#product-image").eq(index).attr("src").split("?")[0]
       );
