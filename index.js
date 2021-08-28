@@ -10,8 +10,10 @@ app.use(bodyParser.json());
 
 app.use("/api/scrape", scrapeRoutes);
 
-app.listen(3001, () => {
-  console.log("listening on http://localhost:3001");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`listening on http://localhost:${PORT}`);
 });
 
 module.exports = app;
