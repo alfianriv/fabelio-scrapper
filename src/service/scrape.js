@@ -9,7 +9,7 @@ const scrapeAPI = async (url) => {
     const $ = cheerio.load(html);
 
     const product_name = $("#product-name").first().text();
-    const product_slug = url.replace(/https:\/\/fabelio.com\/ip\//g, "");
+    const product_slug = url.replace(/https:\/\/fabelio.com\/ip\//g, "").split('?')[0];
     const product_price = parseInt(
       $("#product-final-price")
         .first()
